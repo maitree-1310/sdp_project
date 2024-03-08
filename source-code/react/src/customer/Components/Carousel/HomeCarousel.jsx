@@ -9,15 +9,15 @@ const handleDragStart = (e) => e.preventDefault();
 const HomeCarousel = () => {
   const navigate = useNavigate();
   const item = homeCarouselData.map((item) => (
-    <img
-      className="cursor-pointer"
-      onClick={() => navigate(item.path)}
-      src={item.image}
-      alt=""
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  ));
+      <img
+        className="carousel-item-image"
+        src={item.image}
+        alt="Image description"
+        onClick={() => navigate(item.path)}
+        style={{ width: '100%', height: '450px' }}
+      />
+    )
+  );
   return (
     <AliceCarousel
       mouseTracking

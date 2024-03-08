@@ -179,5 +179,58 @@ export const phonesPage1 = [
     "thirdLavelCategory": "Smartphones",
     "description": "The Google Pixel 7 Pr is..."
   },
+  {
+    "imageUrl": "https://images.ctfassets.net/wcfotm6rrl7u/11mva8BhLC3rIemE09LRyW/14588c2203057521e33d4a008d3e2abb/nokia-C32-Mint-front_back-in.png?h=600&fm=avif",
+    "brand": "Nokia",
+    "title": "Nokia C32",
+    "color": "Hazel",
+    "discountedPrice": 7499,
+    "price": 10499,
+    "discountPersent": 25,
+    "ram": [
+      {
+        "value": "4GB",
+        "quantity": 1
+      }
+    ],
+    "storage": [
+      {
+        "value": "64GB",
+        "quantity": 1
+      }
+    ],
+    "quantity": 25,
+    "topLavelCategory": "Electronics",
+    "secondLavelCategory": "smartphone",
+    "thirdLavelCategory": "Smartphones",
+    "description": "Nokia c32 is..."
+  },
+  {
+    "imageUrl": "https://images.ctfassets.net/wcfotm6rrl7u/11mva8BhLC3rIemE09LRyW/14588c2203057521e33d4a008d3e2abb/nokia-C32-Mint-front_back-in.png?h=600&fm=avif",
+    "brand": "Nokia",
+    "title": "Nokia C32",
+    "color": "Hazel",
+    "discountedPrice": 7499,
+    "price": 10499,
+    "discountPersent": 25,
+    "ram": [
+      {
+        "value": "4GB",
+        "quantity": 1
+      }
+    ],
+    "storage": [
+      {
+        "value": "64GB",
+        "quantity": 1
+      }
+    ],
+    "quantity": 25,
+    "topLavelCategory": "Electronics",
+    "secondLavelCategory": "smartphone",
+    "thirdLavelCategory": "Smartphones",
+    "description": "Nokia c32 is..."
+  },
  
   ];
+  

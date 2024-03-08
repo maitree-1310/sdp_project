@@ -125,9 +125,9 @@ export default function Navigation() {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-indigo-600 text-indigo-600"
-                                : "border-transparent text-gray-900",
-                              "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium border-none"
+                                ? "text-indigo-600 underline p-4"
+                                : "border-transparent text-gray-900"
+                              
                             )
                           }
                         >
@@ -283,9 +283,9 @@ export default function Navigation() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "border-indigo-600 text-indigo-600"
-                                  : "border-transparent text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                  ? "text-indigo-600 underline p-4"
+                                  : "border-transparent text-gray-700 hover:text-gray-800"
+                                
                               )}
                             >
                               {category.name}

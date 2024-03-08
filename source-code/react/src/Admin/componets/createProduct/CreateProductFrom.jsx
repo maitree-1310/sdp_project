@@ -16,11 +16,11 @@ import { useDispatch } from "react-redux";
 import { createProduct } from "../../../Redux/Customers/Product/Action";
 
 
-const initialSizes = [
-  { name: "S", quantity: 0 },
-  { name: "M", quantity: 0 },
-  { name: "L", quantity: 0 },
-];
+// const initialSizes = [
+//   { name: "S", quantity: 0 },
+//   { name: "M", quantity: 0 },
+//   { name: "L", quantity: 0 },
+// ];
 
 const CreateProductForm = () => {
   
@@ -32,7 +32,7 @@ const CreateProductForm = () => {
     discountedPrice: "",
     price: "",
     discountPersent: "",
-    size: initialSizes,
+    // size: initialSizes,
     quantity: "",
     topLavelCategory: "",
     secondLavelCategory: "",
@@ -50,26 +50,26 @@ const jwt=localStorage.getItem("jwt")
     }));
   };
 
-  const handleSizeChange = (e, index) => {
-    let { name, value } = e.target;
-    name==="size_quantity"?name="quantity":name=e.target.name;
+  // const handleSizeChange = (e, index) => {
+  //   let { name, value } = e.target;
+  //   name==="size_quantity"?name="quantity":name=e.target.name;
 
-    const sizes = [...productData.size];
-    sizes[index][name] = value;
-    setProductData((prevState) => ({
-      ...prevState,
-      size: sizes,
-    }));
-  };
+  //   const sizes = [...productData.size];
+  //   sizes[index][name] = value;
+  //   setProductData((prevState) => ({
+  //     ...prevState,
+  //     size: sizes,
+  //   }));
+  // };
 
-  const handleAddSize = () => {
-    const sizes = [...productData.size];
-    sizes.push({ name: "", quantity: "" });
-    setProductData((prevState) => ({
-      ...prevState,
-      size: sizes,
-    }));
-  };
+  // const handleAddSize = () => {
+  //   const sizes = [...productData.size];
+  //   sizes.push({ name: "", quantity: "" });
+  //   setProductData((prevState) => ({
+  //     ...prevState,
+  //     size: sizes,
+  //   }));
+  // };
 
   // const handleRemoveSize = (index) => {
   //   const sizes = [...productData.size];
@@ -197,8 +197,8 @@ const jwt=localStorage.getItem("jwt")
                 onChange={handleChange}
                 label="Top Level Category"
               >
-                <MenuItem value="men">Men</MenuItem>
-                <MenuItem value="women">Women</MenuItem>
+                <MenuItem value="laptop1">Laptops</MenuItem>
+                <MenuItem value="pc1">Pc Components</MenuItem>
                 <MenuItem value="kids">Kids</MenuItem>
               </Select>
             </FormControl>
@@ -247,7 +247,7 @@ const jwt=localStorage.getItem("jwt")
               value={productData.description}
             />
           </Grid>
-          {productData.size.map((size, index) => (
+          {/* {productData.size.map((size, index) => (
             <Grid container item spacing={3} >
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -270,7 +270,7 @@ const jwt=localStorage.getItem("jwt")
                 />
               </Grid> </Grid>
             
-          ))}
+          ))} */}
           <Grid item xs={12} >
             <Button
               variant="contained"
@@ -281,15 +281,7 @@ const jwt=localStorage.getItem("jwt")
             >
               Add New Product
             </Button>
-            {/* <Button
-              variant="contained"
-              sx={{ p: 1.8 }}
-              className="py-20 ml-10"
-              size="large"
-              onClick={()=>handleAddProducts(dressPage1)}
-            >
-              Add Products By Loop
-            </Button> */}
+            
           </Grid>
         </Grid>
       </form>
