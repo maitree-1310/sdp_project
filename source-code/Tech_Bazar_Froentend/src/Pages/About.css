@@ -1,0 +1,112 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    margin: 5% 0;
+}
+
+#team img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+#teamTitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    margin-top: 10px;
+}
+
+#teamPos {
+    font-size: 16px;
+    font-weight: 100;
+    color: black;
+}
+
+#pageTitle {
+    display: block;
+}
+
+#pageTitle1 {
+    display: none;
+}
+
+#pageTitle p,
+#pageTitle1 p {
+    color: black;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+#pageData {
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#pageData p {
+    text-align: justify;
+    padding: 5% 0;
+}
+
+#middleColumn {
+    border-right: 0px;
+}
+
+#rightColumn {
+    border-left: 0px;
+}
+
+#imgRight {
+    transform: none;
+    margin: 0;
+}
+
+.fadeOut,
+.fadeIn {
+    background-color: white;
+    border-right: 0px;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+
+@media only screen and (min-width: 600px) {
+    .App {
+        flex-direction: row;
+    }
+
+    .fadeOut,
+    .fadeIn {
+        width: 33.33%;
+    }
+
+    #pageTitle {
+        display: none;
+    }
+
+    #pageTitle1 {
+        display: block;
+    }
+}
